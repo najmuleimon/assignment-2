@@ -346,11 +346,21 @@ Popular css
     font-weight: 700;
     color: var(--main-color);
     text-transform: capitalize;
+    transition: color 0.3s linear;
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+    -ms-transition: color 0.3s linear;
+    -o-transition: color 0.3s linear;
 }
 
 .popular .more .more-icon,
 .single-product .product-detail a .more-icon {
     margin-left: 8px;
+}
+
+.popular .more a:hover,
+.single-product .product-detail a:hover {
+    color: var(--text-color);
 }
 
 /*-----------------------------------------
@@ -390,6 +400,11 @@ Featured css
     font-weight: 700;
     color: var(--main-color);
     text-transform: capitalize;
+    transition: color 0.3s linear;
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+    -ms-transition: color 0.3s linear;
+    -o-transition: color 0.3s linear;
 }
 
 /*-----------------------------------------
