@@ -9,6 +9,16 @@ Google fonts
 /*-----------------------------------------
 General css
 -------------------------------------------*/
+:root {
+    --text-color: #3A3A3A;
+    --dark-text: #18191F;
+    --main-color: #E02C6D;
+    --black: #000;
+    --white: #fff;
+    --grey: #5E6366;
+    --light-grey: #787885;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +26,14 @@ General css
 
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
 }
 
 h2 {
@@ -30,18 +48,142 @@ h4 {
     font-family: 'Manrope', sans-serif;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn-style {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--white);
+    background-color: var(--main-color);
+    padding: 10px 24px;
+    border-radius: 41px;
+    -webkit-border-radius: 41px;
+    -moz-border-radius: 41px;
+    -ms-border-radius: 41px;
+    -o-border-radius: 41px;
+}
+
+.btn-style .btn-icon {
+    padding-left: 8px;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    font-weight: 600;
+    font-size: 28px;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+
 /*-----------------------------------------
 Header css
 -------------------------------------------*/
 /*-----------------------------------------
-Navbar css
+Menubar css
 -------------------------------------------*/
+.menubar {
+    height: 40px;
+    padding-top: 80px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul,
+.navbar .main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-left: 34px;
+}
+
+.navbar .navbar-brand a {
+    font-size: 24px;
+    color: var(--text-color);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.navbar .navigation li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--text-color);
+    transition: color 0.3s linear;
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+    -ms-transition: color 0.3s linear;
+    -o-transition: color 0.3s linear;
+}
+
+.navbar .navigation li a:hover {
+    color: var(--main-color);
+}
+
+.navbar .icons li .nav-icon {
+    font-size: 24px;
+    color: var(--black);
+}
+
 /*-----------------------------------------
 Banner css
 -------------------------------------------*/
+.banner {
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: 76% center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.banner .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.banner .banner-text h1 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 70px;
+    color: var(--text-color);
+}
+
+.banner .banner-text p {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-color);
+    padding: 16px 0;
+}
+
+.banner .banner-img {
+    text-align: right;
+}
+
 /*-----------------------------------------
 Popular css
 -------------------------------------------*/
+.single-item .item-details h3 {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 500;
+    color: var(--dark-text);
+    text-transform: capitalize;
+}
+
 /*-----------------------------------------
 Featured css
 -------------------------------------------*/
