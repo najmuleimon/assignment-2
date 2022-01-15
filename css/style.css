@@ -483,7 +483,7 @@ footer .footer-content {
 Media Query
 -------------------------------------------*/
 /* Mobile view */
-@media (max-width: 480px) {
+@media (min-width: 340px) and (max-width: 480px) {
     .section-title h2 {
         font-size: 16px;
     }
@@ -527,6 +527,10 @@ Media Query
         -moz-transform: scaleY(1);
         -ms-transform: scaleY(1);
         -o-transform: scaleY(1);
+    }
+
+    .navbar ul li {
+        margin-left: 20px;
     }
 
     .navbar .icons li:first-child {
